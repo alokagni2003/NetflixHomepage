@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #000000;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#BannerPage {
+    background-image:linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.7)), url("Asserts/netflixBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#BannerPage .header{
+    padding:15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#BannerPage .header img{
+    height: 75px;
+    width: auto;
+}
+
+#BannerPage .header i{
+    color: white;
+    font-size: 20px;
+}
+#BannerPage .header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#BannerPage .header select{
+    width: 140px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: white;
+   padding: 5px 10px;
+   margin-left: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+#BannerPage .header button {
+    background-color: red;
+    color: #ffffff;
+    height: 32px;
+    width: 80px;
+    font-size: 15px;
+    border-width:0px ;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#BannerPage .matter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#BannerPage .matter div{
+    width: 40%;
+}
+
+
+#BannerPage .matter div h1{
+    color: #ffffff;
+    font-size: 54px;
+    font-weight:800;
+    font-family: sans-serif;
+    margin: 0px 0px 16px;
+}
+
+#BannerPage .matter div p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0px 0px 30px;
+}
+
+#BannerPage .matter div h3{
+    color: #ffffffb3;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+#BannerPage .matter .mail{
+    margin: 16px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+
+#BannerPage .matter .mail input{
+    padding: 16px 16px 16px;
+    background-color: transparent;
+    width: 68%;
+    border:1px solid rgba(128, 128, 128, 0.7);
+    background-color: #161616b3;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#BannerPage .matter .mail button{
+    width: 40%;
+    margin-left: 10px;
+    padding:16px 16px 16px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: inherit;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+#line {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    height: 6.25rem;
+    z-index: 1;
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+
+#line .curve-container{
+        box-sizing: border-box;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        margin: auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: solid .25rem transparent;
+        border-top-left-radius: 50% 70%;
+        border-top-right-radius: 50% 70%;
+        border-bottom: none;
+        background: radial-gradient( 50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100% ),black;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        /* border-bottom: 1px solid rgba(184, 40, 105, 1); */
+}
+
+#line .curve-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient( to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 86% );
+}
+
+#planDetails {
+    padding: 0px 10%;
+    background-color: #000000;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+#planDetails h2{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#planDetails .need-box{
+    background: linear-gradient(180deg, #6c1f25 0%, #210d0e 100%);
+    padding: 32px 24px;
+    width: 20%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+#planDetails .need-list{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+#planDetails .need-box h3{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#planDetails .need-box p{
+    color: #ffffffb3;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#planDetails .need-box .rate{
+    color: #ffffffcc;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#planDetails  select{
+    width: 100px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: white;
+   padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+#planDetails .carousel{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#planDetails .carousel ul{
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+
+}
+
+#planDetails .carousel ul li img{
+    border-radius: 10px;
+}
+
+#planDetails .carousel ul li{
+    margin-right: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#planDetails .BoardSection{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    background: linear-gradient(97deg, #45172B 1.27%, #120C1F 75.23%);
+}
+
+#planDetails .BoardSection .play1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    padding: 0px 40px;
+    height: 100%;
+}
+
+#planDetails .BoardSection .play2{
+    background: radial-gradient(94.35% 90.74% at 100% 100%, rgba(229, 9, 20, 0.50) 0%, rgba(23, 43, 71, 0.00) 100%);
+    overflow: hidden;
+    width: 40%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#planDetails .BoardSection .play2 img{
+    height: 500px;
+    padding-right: 0px;
+    width: 100%;
+    position: relative;
+}
+
+#planDetails .BoardSection .play1 h2{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+#planDetails .BoardSection .play1 p{
+    color: #ffffffb3;
+    font-size: 17px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 80%;
+}
+
+#planDetails .join-list{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#planDetails .join-box{
+    background: linear-gradient( 149deg, #192247 0%, #210e17 96.86% );
+    padding: 22px 17px;
+    width: 21%;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#planDetails .join-box h3{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffffff;
+    width: 100%;
+    font-weight: 500;
+}
+
+#planDetails .join-box p{
+    color: #ffffffb3;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 20px;   
+}
+
+#planDetails .join-box svg{
+    /* height: 50px; */
+    align-self: flex-end;   
+}
+
+
+#questionSection{
+    padding: 0px 10%;
+    background-color: #000000;
+    height: 100%;
+    padding-bottom:20px ;
+}
+
+#questionSection h2{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#questionSection .que{
+    background-color: rgb(45,45,45);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#questionSection .que hr{
+    border:1px solid #000000;
+}
+
+#questionSection .que .queinner{
+    background-color: rgb(45,45,45);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#questionSection .que .answer{
+    padding:22px ;
+    display: flex;
+    padding-bottom: 0px;
+    transition: 0.7s;
+    transform:inherit;
+    scroll-behavior: smooth;
+    flex-direction: column;      
+}
+
+.rotate{
+    transform: rotate(-45deg);
+    transition: 1ms;
+}
+
+.display{
+    display: none;
+    transition: 0.7s;
+}
+
+#questionSection .que .answer p{
+   margin-bottom: 20px;
+}
+
+#questionSection .queinner:hover{
+    background-color: rgb(67, 66, 66);
+}
+
+#questionSection .que p{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#questionSection .que svg{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#signInSection{
+    padding: 0px 10%;
+    background-color: #000000;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#signInSection .mail{
+    margin: 16px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 79%;
+    padding-bottom: 50px;
+}
+
+#signInSection h3{
+    color: #ffffffb3;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+#signInSection .mail input{
+    padding: 16px 16px 16px;
+    background-color: transparent;
+    width: 85%;
+    border:1px solid rgba(128, 128, 128, 0.7);
+    background-color: #161616b3;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#signInSection .mail button{
+    width: 20%;
+    margin-left: 10px;
+    padding: 10px 16px 16px;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 23px;
+    font-family: sans-serif;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+
+#footer {
+    padding: 0px 10%;
+    background-color: #000000;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#footer p{
+    color: #ffffffb3;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-bottom: 30px;
+
+}
+
+#footer p span{
+    text-decoration: underline;
+}
+
+#footer div ul{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+    
+}
+
+#footer div ul li{
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 15px;
+    width: 25%;
+    
+}
+
+#footer div ul li a{
+    color: #ffffffb3;
+    font-family: sans-serif;
+}
+
+#footer select{
+    width: 140px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 0px;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px){
+    #BannerPage .matter div{
+        width: 80%;
+    }
+
+    #BannerPage .header img{
+        height: 40px;
+        width: auto;
+    }
+
+    #BannerPage .matter div h1{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    #BannerPage .matter{
+        margin-top: 20%;
+    }
+
+    #BannerPage .matter .mail button{
+        height: 52px;
+        width: 130px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #planDetails .need-box{
+        width: 100%;
+    }
+
+    #planDetails .carousel ul{
+        overflow-y: scroll;
+    }
+
+    #planDetails .BoardSection{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    #planDetails .BoardSection .play1{
+        width: 100%;
+        padding: 20px;
+    }
+    
+
+    #planDetails .BoardSection .play1 h2{
+        font-size: 22px;
+        width: 90%;
+    }   
+
+    #planDetails .BoardSection .play1 p{
+         font-size: 15px;
+    }
+
+    #planDetails .BoardSection .play2{
+         align-self: flex-end;
+         width: 100%;
+    }
+
+    #planDetails .BoardSection .play2 img{
+        height:100%;
+        width: auto;
+    }
+
+    #planDetails .join-box {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    #questionSection .que{
+        width: 100%;
+    }
+
+    #signInSection .mail button{
+        height: 52px;
+        width: 130px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
